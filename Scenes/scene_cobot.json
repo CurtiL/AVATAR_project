@@ -1,0 +1,191 @@
+{
+    "context": {
+        "UnitOfMeasureScale": 0.001,
+        "Zup": false,
+        "RepoPath": "https://curtil.github.io/AVATAR_project/Models"
+    },
+    "scene": [
+        "hdrSkyBox",
+        "ground",
+        "building",
+        "Cobot_Belgrade",
+        "R02_Base",
+        "R02_J1",
+        "R02_J2",
+        "R02_J3",
+        "R02_J4",
+        "R02_J5",
+        "R02_J6",
+        "R02_J7"
+    ],
+    "assets": [
+        {
+            "type": "http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcBuilding",
+            "id": "building",
+            "representations": [
+                {
+                    "file": "Warehouse.glb",
+                    "unit": 1.0
+                }
+            ],
+            "position": [
+                0.0,
+                0.0,
+                0.0
+            ]
+        },
+        {
+            "type": "http://www.ontoeng.com/factory#Robot",
+            "id": "Cobot_Belgrade",
+            "representations": [
+                {
+                    "file": "Cobot_Belgrade.glb",
+                    "unit": 1.0
+                }
+            ],
+            "position": [
+                -2600.0,
+                0.0,
+                0.0
+            ],
+            "placementRelTo": "building",
+            "parentObject": "building"
+        },
+        {
+            "type": "http://www.ontoeng.com/factory#Robot",
+            "id": "R02_Base",
+            "representations": [
+                {
+                    "file": "Cobot_Belgrade.glb#R02_Base",
+                    "unit": 1.0
+                }
+            ],
+            "position": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "placementRelTo": "Cobot_Belgrade",
+            "parentObject": "Cobot_Belgrade"
+        },
+        {
+            "type": "http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcElementAssembly",
+            "id": "R02_J1",
+            "representations": [
+                {
+                    "file": "Cobot_Belgrade.glb#R02_J1",
+                    "unit": 1.0
+                }
+            ],
+            "position": [
+                0.0,
+                0.1869,
+                0.0
+            ],
+            "placementRelTo": "R02_Base",
+            "parentObject": "R02_Base"
+        },
+        {
+            "type": "http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcElementAssembly",
+            "id": "R02_J2",
+            "representations": [
+                {
+                    "file": "Cobot_Belgrade.glb#R02_J2",
+                    "unit": 1.0
+                }
+            ],
+            "position": [
+                -0.02089,
+                0.36,
+                -0.04859
+            ],
+            "placementRelTo": "R02_J1",
+            "parentObject": "R02_J1"
+        },
+        {
+            "type": "http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcElementAssembly",
+            "id": "R02_J3",
+            "representations": [
+                {
+                    "file": "Cobot_Belgrade.glb#R02_J3",
+                    "unit": 1.0
+                }
+            ],
+            "position": [
+                -0.07747,
+                0.5188,
+                0.02896
+            ],
+            "placementRelTo": "R02_J2",
+            "parentObject": "R02_J2"
+        },
+        {
+            "type": "http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcElementAssembly",
+            "id": "R02_J4",
+            "representations": [
+                {
+                    "file": "Cobot_Belgrade.glb#R02_J4",
+                    "unit": 1.0
+                }
+            ],
+            "position": [
+                -0.15354,
+                0.67887,
+                0.06588
+            ],
+            "placementRelTo": "R02_J3",
+            "parentObject": "R02_J3"
+        },
+        {
+            "type": "http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcElementAssembly",
+            "id": "R02_J5",
+            "representations": [
+                {
+                    "file": "Cobot_Belgrade.glb#R02_J5",
+                    "unit": 1.0
+                }
+            ],
+            "position": [
+                -0.3452,
+                0.69707,
+                0.9718
+            ],
+            "placementRelTo": "R02_J4",
+            "parentObject": "R02_J4"
+        },
+        {
+            "type": "http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcElementAssembly",
+            "id": "R02_J6",
+            "representations": [
+                {
+                    "file": "Cobot_Belgrade.glb#R02_J6",
+                    "unit": 1.0
+                }
+            ],
+            "position": [
+                -0.63128,
+                0.76513,
+                0.16283
+            ],
+            "placementRelTo": "R02_J5",
+            "parentObject": "R02_J5"
+        },
+        {
+            "type": "http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcElementAssembly",
+            "id": "R02_J7",
+            "representations": [
+                {
+                    "file": "Cobot_Belgrade.glb#R02_J7",
+                    "unit": 1.0
+                }
+            ],
+            "position": [
+                -0.50738,
+                0.71324,
+                0.12319
+            ],
+            "placementRelTo": "R02_J6",
+            "parentObject": "R02_J6"
+        }
+    ]
+}
